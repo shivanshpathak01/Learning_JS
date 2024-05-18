@@ -1,16 +1,17 @@
 const mySymbol = Symbol("Hey");
 
-
 let user = {
-    "name" : "Shivansh",
-    [mySymbol]:"Hey",    // Now will be considered as Symbol not as Strings
+    "name" : "Shivansh",  // Generally keys are considered as a String in objects
+    [mySymbol]:"Hey",    //Very imp for interviews Now will be considered as Symbol not as Strings 
     email: "shivansh@google.com",
     isWorkingonJS : true
 }
+user.email = "Shivansh@microsoft.com";
+// console.log(user.email);
+// Object.freeze(user);      // Now Email can't be changed  
+// user.email = "Shivansh@apple.com";
+// console.log(user.email);
+// console.log(user["name"]);   // more convenient way
+console.log(typeof [mySymbol]);
 
-
-console.log(user.name);
-console.log(user["name"]);   // more convenient way
-console.log([mySymbol]);
-
-// Object.freeze       Used so that value will never change;
+// Object.freeze(user)       Used so that value will never change;

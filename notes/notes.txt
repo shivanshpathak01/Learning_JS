@@ -1,0 +1,7 @@
+->Printing - Many variables at a time console.log([variable1,variable2,variable3]);
+->Object type  of null is object;
+->we use `${}` for Printing
+->In array functions, {arr.slice()  =>> Array doesn't get modified} , While in {arr.splice =>> Array get modified}
+-> Array concatanation =>> 1. [...arr1,...arr2] Normal concatanation of two arrays   2.If we have to cancatanate the array inside the array inside array we use arr.flat(number of inside arrays) method         
+->Objects =>> 1. Keys are considered as strings, 2.Symbols are declared as {[mySymbol]:"hi"} 3. Instead of using .(dot) operator in some situations we can use console.log(user[variable1]) also  3. We can make the object unchangeable by Object.freeze(object name);
+
