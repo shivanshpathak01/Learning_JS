@@ -4,4 +4,10 @@
 ->In array functions, {arr.slice()  =>> Array doesn't get modified} , While in {arr.splice =>> Array get modified}
 -> Array concatanation =>> 1. [...arr1,...arr2] Normal concatanation of two arrays   2.If we have to cancatanate the array inside the array inside array we use arr.flat(number of inside arrays) method         
 ->Objects =>> 1. Keys are considered as strings, 2.Symbols are declared as {[mySymbol]:"hi"} 3. Instead of using .(dot) operator in some situations we can use console.log(user[variable1]) also  3. We can make the object unchangeable by Object.freeze(object name);
-
+->Objects inside objects can be accessed by using (.) dot operator 
+->To merge the objects like Arrays, we use Objects.assign(), ({},obj1,obj2...) We use {} so that the objects get merged easily and looks more professional but not necessarily imp
+->But the easiest way to merge the object is just like the arrays {...obj1,...obj2} 
+->By object.keys(), we can  convert the object into the arrays And also use Object.values() to get their respective values 
+->Destructuring of an Object in JS means changing its POV of calling means JavaScript.user will become user or myuser whatever easy name you want to give instead of typing JavaScript. every time 
+->For above concept, fun({destructured object}), curly braces are used 
+-> JSON(JavaScript object notation) is for APIs(APIs handle the task of others)
