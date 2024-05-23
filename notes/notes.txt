@@ -11,3 +11,6 @@
 ->Destructuring of an Object in JS means changing its POV of calling means JavaScript.user will become user or myuser whatever easy name you want to give instead of typing JavaScript. every time 
 ->For above concept, fun({destructured object}), curly braces are used 
 -> JSON(JavaScript object notation) is for APIs(APIs handle the task of others)
+-> Functions : function hello(){}, this is how the functions are being written 
+-> hello, this is the referance, while hello(), this is the execution of the function.
+-> In any function, if argument remains empty, automatically return undefined not null.
