@@ -15,3 +15,7 @@
 -> hello, this is the referance, while hello(), this is the execution of the function.
 -> In any function, if argument remains empty, automatically return undefined not null.
 ->If in any function we have given one argument but i have to return more number of values then we use (...variableName) in function itself while passing the argument 
+-> The above mentioned (...) is called REST operator {Previously used as spread operator for merging the arrays}.
+-> If in above argument we pass (var1,var2,...num1), and pass 10 values in function then first two values will be assigned to the given two varibales(i.e. var1 and var2) and all the others will be then assigned by REST operator as mentioned above.
+-> If any function being stored in any variable, it will be sometimes called Expression and if we call the variablein which it is stored above where it is written it will give me error because it was stored in a variable .
+->  

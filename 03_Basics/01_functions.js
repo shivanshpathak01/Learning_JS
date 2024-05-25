@@ -21,3 +21,22 @@ function loginUser(user = "shivansh"){     // This is the default value, wheneve
 }
 
 console.log(loginUser());
+
+const user = {
+    username :"S",
+    price :545
+}
+function handleObject(anyuser){
+    console.log(`Username is ${anyuser.username} and the price is ${anyuser.price}`);
+}
+handleObject(user);  // Object passing 
+handleObject({
+    username : "hei",
+    price : 2152               //Object passing by second method
+})
+let myArray = [200,400,4501,522];
+function returnMyDesiredValue(myIndex){
+    return myIndex[2];
+}
+
+console.log(returnMyDesiredValue(myArray));
