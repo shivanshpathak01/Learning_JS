@@ -59,4 +59,6 @@ Step3. Result will be again returned to Global EC
 -> all the falsy values are listed below else others are truthy : 
     false, 0, -0, BigInt 0n, "", null, undefined, Nan
 -> All the surprising truthy values : "0", 'false', " ", [],{},function(){}.
--> if we have to check whether the array is empty or not then check by (.length) operator,   
+-> If we have to check whether the array is empty or not then check by (.length) operator, for ex. (arr1.length===0) log 
+-> To check an empty Object, apply the same method as arrays mentioned above (Refer truthy.js)
+ 

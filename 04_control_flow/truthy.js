@@ -10,3 +10,7 @@ else{
 }
   // All the falsy values  : false, 0, -0, null, BigInt 0n, undefined, NaN,""
   // All the surprising truthy values : "0", 'false', " ", [],{},function(){} 
+const emptyObj = {}
+  if (Object.keys(emptyObj).length===0) {
+    console.log("Object is empty");
+  }
