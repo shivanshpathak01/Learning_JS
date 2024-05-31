@@ -1,3 +1,4 @@
+->JS is single threaded and every thing is a Process in JS 
 ->Printing - Many variables at a time console.log([variable1,variable2,variable3]);
 ->Object type  of null is object;
 ->we use `${}` for Printing
@@ -25,3 +26,26 @@
 -> IIFE(Immediately Invoked function Expression) used to remove the pollution caused by global scope variable And IIFE is invoked Immediately.
 -> We wrap the function and next line which we want to execute like this ()().
 -> Always use ; Semicolon in IIFE that tells it where to stop
+
+/////***    How JS Programmes works    ***/////
+
+-> 1.JS Execution Context => Firstly It is Global EC (this keyword is assigned there)=>{code}
+-> 2.Function or Functional EC
+-> 3.Eval EC  
+-> Code is Executed like {}=>1.Memory Creation Phase or Creation Phase => Memory assigned in this Phase
+-> 2. Execution Phase => Execution in this Phase
+-> Let's Say there is a program where we have to add two numbers So the Execution is like :
+
+//***       Phase 1st       ****///
+Global execution Phase => Here this is assigned or given 
+
+//***       Phase 2nd       ****///
+Memory Phase 
+Step1. undefined is assigned to both the variables (num1 = undefined,num2 = undefined)
+Step2. defination of function is given to function's name
+Step3. result is undefined yet and is stored in some variable (Let's call it result)
+
+//***       Phase 3rd       ****///
+Execution Phase 
+Step1. valuesare assigned to both variables (num1 = 10,num2 = 2);
+Step2. It goes to function and there a new variable environment + Execution thread is creted
