@@ -47,5 +47,5 @@ Step3. result is undefined yet and is stored in some variable (Let's call it res
 
 //***       Phase 3rd       ****///
 Execution Phase 
-Step1. valuesare assigned to both variables (num1 = 10,num2 = 2);
+Step1. values are assigned to both variables (num1 = 10,num2 = 2);
 Step2. It goes to function and there a new variable environment + Execution thread is creted
