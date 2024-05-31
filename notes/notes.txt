@@ -48,4 +48,15 @@ Step3. result is undefined yet and is stored in some variable (Let's call it res
 //***       Phase 3rd       ****///
 Execution Phase 
 Step1. values are assigned to both variables (num1 = 10,num2 = 2);
-Step2. It goes to function and there a new variable environment + Execution thread is creted
+Step2. It goes to function and there a new variable environment + Execution thread is created
+Step3. Result will be again returned to Global EC
+
+-> In call stack of programmes here, LIFO is used (Firstly,Global EC,then fun1(),Fun2()...),means Fun2() will be taken out first after execution. (Refer to Video 25)
+-> '===' Checks both the values as well as the datatype of values whether they are same or not.
+-> In switch case,if the break statement is removed and if the value matches then every other statements below it gets executed except default case that's why break statement is there.
+-> if we have check the strings in switch statement then we can write them at the place where we write case 1 as case "string";
+-> if you do not have to give some condition in if-else statement just you have to place the variable there, and your code works for that we use truthy or falsy values there.
+-> all the falsy values are listed below else others are truthy : 
+    false, 0, -0, BigInt 0n, "", null, undefined, Nan
+-> All the surprising truthy values : "0", 'false', " ", [],{},function(){}.
+-> if we have to check whether the array is empty or not then check by (.length) operator,   
