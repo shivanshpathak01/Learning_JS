@@ -67,4 +67,8 @@ Step3. Result will be again returned to Global EC
 -> For-of : Iterate over iterable values (elements in an array, characters in a string, etc.). Ex. const fruits = ['apple', 'banana', 'cherry']; || console.log(fruit); // Outputs: apple, banana, cherry
 -> Maps : More info in Maps.js
 -> Maps can't be iterated normally.
-
+-> forEach Callback function {in normal function}: arrayname.forEach(function (parameter) { } ) : will iterte over the array elements 
+-> forEach Callback function {in arrow function}: arrayname.forEach( (parameter)=> { } ) 
+-> if there is already a function is given, just give its referance not execute the function.
+-> if there are a JSon file type thing is given and you have to find the value of it from key-value pair, then Always we use callback in arrow function and most important we access the values with (parameter.key).
+->
