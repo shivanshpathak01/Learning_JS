@@ -70,5 +70,9 @@ Step3. Result will be again returned to Global EC
 -> forEach Callback function {in normal function}: arrayname.forEach(function (parameter) { } ) : will iterte over the array elements 
 -> forEach Callback function {in arrow function}: arrayname.forEach( (parameter)=> { } ) 
 -> if there is already a function is given, just give its referance not execute the function.
--> if there are a JSon file type thing is given and you have to find the value of it from key-value pair, then Always we use callback in arrow function and most important we access the values with (parameter.key).
-->
+-> if there are a JSON file type thing is given and you have to find the value of it from key-value pair, then Always we use callback in arrow function and most important we access the values with (parameter.key).
+-> Filter: means in the forEach Callback Arrow, We need a condition too which is served, very efficient.
+-> If we put a curly braces while writing the function or anything other, we have to write return keyword else implicit return in same line.
+-> When we use one function and again use another function, its called the function chaining and value from one function passes to another and then another then another.
+-> Reduce function is basically used in the shopping carts to calculate the bills etc., It always starts with a initialvalue which we have to give to it.
+-> 
