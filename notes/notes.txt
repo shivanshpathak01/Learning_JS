@@ -61,4 +61,10 @@ Step3. Result will be again returned to Global EC
 -> All the surprising truthy values : "0", 'false', " ", [],{},function(){}.
 -> If we have to check whether the array is empty or not then check by (.length) operator, for ex. (arr1.length===0) log 
 -> To check an empty Object, apply the same method as arrays mentioned above (Refer truthy.js)
- 
+/******                  Loops                      *******/
+-> For-in,For-of,forEach,map ,These loops are designed specially for the arrays .
+-> For-in : Iterate over object properties (keys).Ex. const car = { make: 'Toyota', model: 'Corolla', year: 2020 }; || console.log(key); // Outputs: make, model, year || console.log(car[key]); // Outputs: Toyota, Corolla, 2020
+-> For-of : Iterate over iterable values (elements in an array, characters in a string, etc.). Ex. const fruits = ['apple', 'banana', 'cherry']; || console.log(fruit); // Outputs: apple, banana, cherry
+-> Maps : More info in Maps.js
+-> Maps can't be iterated normally.
+
