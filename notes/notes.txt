@@ -75,4 +75,14 @@ Step3. Result will be again returned to Global EC
 -> If we put a curly braces while writing the function or anything other, we have to write return keyword else implicit return in same line.
 -> When we use one function and again use another function, its called the function chaining and value from one function passes to another and then another then another.
 -> Reduce function is basically used in the shopping carts to calculate the bills etc., It always starts with a initialvalue which we have to give to it.
--> 
+
+/*********        DOM Manipulation           **********/
+
+-> Nodelists,HTML collections etc. are not a Array, They just looks like they are array and also in their prototype, forEach is there but map is not there. Means you can not treat them as arrays. 
+-> document.getElementById.setAttribute() will always override the values independent of what was the value given previously.
+-> title.innerText : It includes all the text that are visible on the screen.
+-> title.textContent : It includes all the contents that are available not only the visible ones.
+-> title.textHTML : It includes all the HTML (If any) that are available.
+-> document.querySelector() : selects exactly like the Selectors in CSS, used to select and return the elements, But selects only one value.
+-> document.querySelectorAll() : Returns the value in Nodelists not a single element, so you can not apply the properties unless you specify the element on which you want to apply the properties just like the arrays i.e. myH[0].
+-> 33:03
