@@ -85,4 +85,4 @@ Step3. Result will be again returned to Global EC
 -> title.textHTML : It includes all the HTML (If any) that are available.
 -> document.querySelector() : selects exactly like the Selectors in CSS, used to select and return the elements, But selects only one value.
 -> document.querySelectorAll() : Returns the value in Nodelists not a single element, so you can not apply the properties unless you specify the element on which you want to apply the properties just like the arrays i.e. myH[0].
--> 33:03
+-> 
