@@ -86,4 +86,23 @@ Step3. Result will be again returned to Global EC
 -> document.querySelector() : selects exactly like the Selectors in CSS, used to select and return the elements, But selects only one value.
 -> document.querySelectorAll() : Returns the value in Nodelists not a single element, so you can not apply the properties unless you specify the element on which you want to apply the properties just like the arrays i.e. myH[0].
 -> To convert any method or function to array => Array.from(Nodelists)
--> 
+-> Basically these selectors and all are for targetting some element or values 
+-> In DOM, if you are even giving a space or a line break it is counted in nodes specifically speaking childNodes. 
+-> document.createElement() : To Create an object in the DOM we use this.
+
+************ Object Creation and DOM Manipulation ************
+-> let div = document.createElement('div');
+    console.log(div);
+    div.className = "Shivansh";          => assigns className shivansh to the div
+    div.id = Math.random();              => assigns random number to the div  
+    div.setAttribute("title", "My title")  => assigns different attributes, Works like key value pair
+    div.style.backgroundColor= "Red";     => we can style also like this.
+    // div.innerText = "Shivansh Pathak";
+    let addText = document.createTextNode("Hello Hello")
+    div.appendChild(addText);
+    // div.innerText = "Shivansh Pathak";       => To give innerText to the docs
+    let addText = document.createTextNode("Hello Hello")
+    div.appendChild(addText);                   => To give innerText to docs 
+    -> Both of the above methods are used to give innertext but some people say second one is more efficient because it directly go and set the text while in the first one itb firstly go and take the values then override them, basically it take a round trip and take more time But there is a debate.
+    -> Used to attach this to the document   =>  "document.body.appendChild(div)"
+     
