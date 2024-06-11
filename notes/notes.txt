@@ -105,4 +105,4 @@ Step3. Result will be again returned to Global EC
     div.appendChild(addText);                   => To give innerText to docs 
     -> Both of the above methods are used to give innertext but some people say second one is more efficient because it directly go and set the text while in the first one itb firstly go and take the values then override them, basically it take a round trip and take more time But there is a debate.
     -> Used to attach this to the document   =>  "document.body.appendChild(div)"
-     
+    
