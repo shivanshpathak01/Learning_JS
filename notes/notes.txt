@@ -105,4 +105,28 @@ Step3. Result will be again returned to Global EC
     div.appendChild(addText);                   => To give innerText to docs 
     -> Both of the above methods are used to give innertext but some people say second one is more efficient because it directly go and set the text while in the first one itb firstly go and take the values then override them, basically it take a round trip and take more time But there is a debate.
     -> Used to attach this to the document   =>  "document.body.appendChild(div)"
-    
+
+**********/            Adding or editing in DOM                 /*****
+Normal way of Adding new languages to DOM -> In this method, whole tree is traversed in order to perform the operation , So instead of using innerHTML approach Go with Optimized approach that is listed after the code of this approach
+
+function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("Java")
+
+    // Optimized way of adding more things to DOM 
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }    
+
+    // Edit element 
+-> replaceWith() : is a method used to edit the elements in DOM
+-> firstLang.outerHTML = '<li> TypeScript</li>' : method is used to change whole HTML of any document 
+-> variableName.remove() : used for simply removing a element or something you want to remove 
+-> 
