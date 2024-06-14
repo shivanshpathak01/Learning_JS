@@ -34,7 +34,8 @@ const form = document.querySelector('form');
 // const height = parseInt(document.querySelector('#height').value)
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault(); 
+  // It stops the event to perform the defaultevent Happening 
 
   const height = parseInt(document.querySelector('#height').value);
   const weight = parseInt(document.querySelector('#weight').value);
@@ -50,6 +51,8 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
-
+```
+#### Solution 3
+``` Javascript
 
 ```
