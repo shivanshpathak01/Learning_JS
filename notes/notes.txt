@@ -129,4 +129,12 @@ function addLanguage(langName){
 -> replaceWith() : is a method used to edit the elements in DOM
 -> firstLang.outerHTML = '<li> TypeScript</li>' : method is used to change whole HTML of any document 
 -> variableName.remove() : used for simply removing a element or something you want to remove 
+  
+   /*********       Event Handling       *********/
+
+-> eventname.preventDefault() : Used to prevent the default working of event 
+-> We can use parseInt to parse the values to Integer 
+-> if we have to use Nan then instead of that, use isNan(), it is more efficient as well as more recommended
+-> we can use both document.querySelector or document.getElementById
+-> setInterval(function (){},1000) : use to make the values run for every second, also values can be changed
 -> 
