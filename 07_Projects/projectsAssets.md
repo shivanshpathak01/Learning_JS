@@ -54,5 +54,12 @@ form.addEventListener('submit', function (e) {
 ```
 #### Solution 3
 ``` Javascript
+const clock = document.querySelector('#clock')
+// we can also make this using the Below written method
+// const clock = document.getElementById('clock')
 
+setInterval(function (){
+  let date = new Date()
+  clock.innerHTML = date.toLocaleTimeString()
+},1000)
 ```
