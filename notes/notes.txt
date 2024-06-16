@@ -150,5 +150,6 @@ function addLanguage(langName){
                                                             // target, toElement, srcElement, currentTarget,
                                                             // clientX, clientY, screenX, screenY
                                                             // altkey, ctrlkey, shiftkey, keyCode
--> Capturing :   
--> Bubbling Up : 
+-> Capturing : outside to inside      
+-> Bubbling Up : means when two event are invoked, then events invoked in the fashion of bubble, like inside to outside  
+-> To stop event Bubbling, use eventname.stopPropagation() 
