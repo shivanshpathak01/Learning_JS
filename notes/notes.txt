@@ -158,4 +158,15 @@ function addLanguage(langName){
 -> We can also use if else statements to check if we want to remove something or not 
 -> Both Synchronous(Blocking type) and Asynchronous(Non Blocking type) type of code is necessary for us as per their use cases.
 -> Fetch APIs : Works like normal APIs but have a high Priority to than normal task queue processes.
-->  
+-> setTimeOut() : Used to set the time after which the task is going to happen 
+-> clearTimeout() : Used to clear all the previously set timeout things 
+  *********     Code snippet       ********
+  const changeMe = function (){
+        document.querySelector('h1').innerHTML = "The Shivansh Pathak"
+        }
+        // setTimeout(changeMe,3000);
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log('Stopped');
+        })
+
