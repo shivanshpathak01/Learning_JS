@@ -137,4 +137,18 @@ function addLanguage(langName){
 -> if we have to use Nan then instead of that, use isNan(), it is more efficient as well as more recommended
 -> we can use both document.querySelector or document.getElementById
 -> setInterval(function (){},1000) : use to make the values run for every second, also values can be changed
--> 
+
+/***********            Events                 ************/
+-> Approach -1 : previously used in jQuery - on event 
+-> Approach 0 : attachEvent - used previously on Internet Explorer, Now A days not used 
+-> Approach 1 : Never Inject the Onclick or any other event to HTML structure directly, It is not scalable in JS , While in ReactJs they are scalable in some scenearios.
+-> Approach 2 :Rather than following the above approach, Simply select the element (document.getElementById) and then Inject your events.
+-> Approach 3 (Best one): Using event listener  
+-> Some times in Event listener function you have to give a third parameter true or false (and its default value is false) , It is only written there because some of the applications do not run until you give them true or false 
+*** Important : Sometimes in interviews, We will be asked to create a Circle, rectangle etc. where we click, Also tell me the time stamps when the user clicked on the screen, These questions can be solved using events, If you console.log the event you will get all the details of the event happening and from there you can find and solve these types of questions.
+*** Important topics related to Events for interviews :     // type, timestamp, defaultPrevented
+                                                            // target, toElement, srcElement, currentTarget,
+                                                            // clientX, clientY, screenX, screenY
+                                                            // altkey, ctrlkey, shiftkey, keyCode
+-> Capturing :   
+-> Bubbling Up : 
