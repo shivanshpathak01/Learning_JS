@@ -156,4 +156,6 @@ function addLanguage(langName){
 -> .remove() : used as remove event to remove the element you selected.
 -> Tagname in Events : Describes which type of element it is 
 -> We can also use if else statements to check if we want to remove something or not 
--> 
+-> Both Synchronous(Blocking type) and Asynchronous(Non Blocking type) type of code is necessary for us as per their use cases.
+-> Fetch APIs : Works like normal APIs but have a high Priority to than normal task queue processes.
+->  
