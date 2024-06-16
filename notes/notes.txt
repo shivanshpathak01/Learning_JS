@@ -153,3 +153,6 @@ function addLanguage(langName){
 -> Capturing : outside to inside      
 -> Bubbling Up : means when two event are invoked, then events invoked in the fashion of bubble, like inside to outside  
 -> To stop event Bubbling, use eventname.stopPropagation() 
+-> .remove() : used as remove event to remove the element you selected.
+-> Tagname in Events : Describes which type of element it is 
+-> We can also use if else statements to check if we want to remove something or not 
