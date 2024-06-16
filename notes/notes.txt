@@ -170,3 +170,6 @@ function addLanguage(langName){
             console.log('Stopped');
         })
 
+-> setInterval : After a interval of time what task should be executed
+-> clearTimeout : Clears setInterval, means stops the execution.
+-> 
