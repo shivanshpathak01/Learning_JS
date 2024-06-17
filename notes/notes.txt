@@ -172,4 +172,6 @@ function addLanguage(langName){
 
 -> setInterval : After a interval of time what task should be executed
 -> clearTimeout : Clears setInterval, means stops the execution.
+-> After completion of our task we can assign null to the variables to make them free; means just like c++ to make the code effiecient and professional we have to free the variables.
+-> Also in this process, if we can use conditionals (if, else) then that will be very Good for whole codebase
 -> 
