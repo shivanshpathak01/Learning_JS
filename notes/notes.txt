@@ -177,4 +177,6 @@ function addLanguage(langName){
 -> JSON.parse() : will convert the data (for ex. string) to JSON type.
 -> V8 engine runs the JS. For more details refer to video 39.
 -> API Request => Revise again 
--> 
+****************           Promises                 *****************
+-> Promises : are the objects resulting in eventual completion or failure of an Asynchronous operationand its resulting value.
+-> for more detailed just check the file of promises.js 
