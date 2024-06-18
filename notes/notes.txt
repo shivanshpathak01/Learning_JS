@@ -179,4 +179,9 @@ function addLanguage(langName){
 -> API Request => Revise again 
 ****************           Promises                 *****************
 -> Promises : are the objects resulting in eventual completion or failure of an Asynchronous operationand its resulting value.
+-> Basic structure of Promises :new Promise(function(){}); 
 -> for more detailed just check the file of promises.js 
+-> .then().theh => called chaining means function 1's outcome will pass to function 2 and its outcome to 3 and so on .
+-> .catch() => catches the errors 
+-> .finally()=> will run always and it means that tell the program that either your work is done or not 
+-> 
