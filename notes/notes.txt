@@ -174,4 +174,7 @@ function addLanguage(langName){
 -> clearTimeout : Clears setInterval, means stops the execution.
 -> After completion of our task we can assign null to the variables to make them free; means just like c++ to make the code effiecient and professional we have to free the variables.
 -> Also in this process, if we can use conditionals (if, else) then that will be very Good for whole codebase
+-> JSON.parse() : will convert the data (for ex. string) to JSON type.
+-> V8 engine runs the JS. For more details refer to video 39.
+-> API Request => Revise again 
 -> 
