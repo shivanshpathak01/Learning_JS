@@ -193,3 +193,6 @@ function addLanguage(langName){
 -> if you write async in front of any function it will Always return a promise .If you return a promise it will wrap around the value and return a promise 
 -> async : makes a function return a Promise
 -> await : makes a function wait for a Promise
+-> fetch() : network based request
+-> important : if a request got a 404 error or any other error, it will always be treated as response, can't be treated as error, it is treated as error only if browser was unable to request it
+-> 
