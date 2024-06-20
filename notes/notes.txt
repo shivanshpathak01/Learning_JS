@@ -184,4 +184,6 @@ function addLanguage(langName){
 -> .then().theh => called chaining means function 1's outcome will pass to function 2 and its outcome to 3 and so on .
 -> .catch() => catches the errors 
 -> .finally()=> will run always and it means that tell the program that either your work is done or not 
--> 
+**************           Async Await              ***************
+-> if you write async in front of any function it will Always return a promise .If you return a promise it will wrap around the value and return a promise 
+->  
