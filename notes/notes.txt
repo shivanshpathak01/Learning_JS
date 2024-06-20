@@ -198,13 +198,21 @@ function addLanguage(langName){
 
 ************         OOPS      *******************
 .this : this keyword is used to refer current context
+-> .this refer current context of functions also not just only in constructors.
 -> if we do console.log(this), itb will give us the object which is acting as the current content 
 -> We use new keyword always as it gives us a constructer function, otherwise normally our values get overrided, instead of writing the function only  
 -> constructor is just the referance of the object
+->  
 
 **************         Prototype            ***************
 -> Everything in js is object, even  functions are also objects (Refer to Objects.js in OOPs)
 -> Function -----> Objects --------> null
 -> Array -----> Objects --------> null
--> Strings -----> Objects --------> null
- 
+-> Strings -----> Objects --------> null   {Shown below :) }
+-> Prototype : Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+-> Here's what happens behind the scenes when the new keyword is used:       (For referance use Objects.js in OOPs)
+A new object is created: The new keyword initiates the creation of a new JavaScript object.
+A prototype is linked: The newly created object gets linked to the prototype property of the constructor function. This means that it has access to properties and methods defined on the constructor's prototype.
+The constructor is called: The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor, JavaScript assumes this, the newly created object, to be the intended return value.
+The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
+-> 
