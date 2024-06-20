@@ -201,3 +201,10 @@ function addLanguage(langName){
 -> if we do console.log(this), itb will give us the object which is acting as the current content 
 -> We use new keyword always as it gives us a constructer function, otherwise normally our values get overrided, instead of writing the function only  
 -> constructor is just the referance of the object
+
+**************         Prototype            ***************
+-> Everything in js is object, even  functions are also objects (Refer to Objects.js in OOPs)
+-> Function -----> Objects --------> null
+-> Array -----> Objects --------> null
+-> Strings -----> Objects --------> null
+ 
