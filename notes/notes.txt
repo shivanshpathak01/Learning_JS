@@ -195,4 +195,9 @@ function addLanguage(langName){
 -> await : makes a function wait for a Promise
 -> fetch() : network based request
 -> important : if a request got a 404 error or any other error, it will always be treated as response, can't be treated as error, it is treated as error only if browser was unable to request it
--> 
+
+************         OOPS      *******************
+.this : this keyword is used to refer current context
+-> if we do console.log(this), itb will give us the object which is acting as the current content 
+-> We use new keyword always as it gives us a constructer function, otherwise normally our values get overrided, instead of writing the function only  
+-> constructor is just the referance of the object
