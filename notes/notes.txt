@@ -219,3 +219,5 @@ The new object is returned: After the constructor function has been called, if i
 Important : When we have window object access, this here refers to window object But in node environment we get empty object 
 -> .call() Method : used to hold the referance for the further use and holding its execution context
 -> .call(), when we pass this in this function of call, it holds back the value and referance
+-> extend keyword is used for the inheritance here also 
+-> 
