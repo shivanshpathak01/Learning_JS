@@ -220,4 +220,4 @@ Important : When we have window object access, this here refers to window object
 -> .call() Method : used to hold the referance for the further use and holding its execution context
 -> .call(), when we pass this in this function of call, it holds back the value and referance
 -> extend keyword is used for the inheritance here also 
--> 
+-> By using Bind we can send all the things that was't available to send 
