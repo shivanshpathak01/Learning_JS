@@ -228,4 +228,10 @@ Note : Some properties of some Objects kept permanent that no can change them li
 So you can make your own Object's properties so that no one can change that by changing the enumerable and writable options (referance: MathPI.js) 
 
 Important : Many times we need to handle the situations where we have to handle the errors , so there we can check the typeof in if statement and check if this thing is of some specific type then only it should get printed 
+
+***************                Getters and Setters                     ***************
+-> get : The get syntax binds an object property to a function that will be called when that property is looked up. It can also be used in classes.
+-> set : The set syntax binds an object property to a function to be called when there is an attempt to set that property. It can also be used in classes.
+-> Name of the Function or method should be same 
+-> If you are using get then you have to use set also, it is compulsory.
 -> 
