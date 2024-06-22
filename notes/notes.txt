@@ -234,4 +234,11 @@ Important : Many times we need to handle the situations where we have to handle 
 -> set : The set syntax binds an object property to a function to be called when there is an attempt to set that property. It can also be used in classes.
 -> Name of the Function or method should be same 
 -> If you are using get then you have to use set also, it is compulsory.
+interview Important : If there are two Functions inner and outer connected to each other and obviously having lexical scoping and we return the referance or anything of a function,then in memory whole lexical scoping function will be saved not just only that referance.
+-> Here Lexical Scoping is used bcz color is passed in outer function and inner function is getting that:
+function clickHandler(color){
+            return function(){
+                document.body.style.backgroundColor = `${color}` 
+            }
+}
 -> 
