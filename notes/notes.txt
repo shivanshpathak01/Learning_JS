@@ -221,3 +221,11 @@ Important : When we have window object access, this here refers to window object
 -> .call(), when we pass this in this function of call, it holds back the value and referance
 -> extend keyword is used for the inheritance here also 
 -> By using Bind we can send all the things that was't available to send 
+
+-> Object.getOwnPropertyDescriptor : The Object.getOwnPropertyDescriptor() static method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object's prototype chain). The object returned is mutable but mutating it has no effect on the original property's configuration.
+
+Note : Some properties of some Objects kept permanent that no can change them like :- Value of PI 
+So you can make your own Object's properties so that no one can change that by changing the enumerable and writable options (referance: MathPI.js) 
+
+Important : Many times we need to handle the situations where we have to handle the errors , so there we can check the typeof in if statement and check if this thing is of some specific type then only it should get printed 
+-> 
