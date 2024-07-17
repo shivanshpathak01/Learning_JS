@@ -1,0 +1,50 @@
+-> JS Runtime Environment (Not a language, not a library and ether not a framework).
+-> Used for server side programming
+
+-> Node REPL(read, evaluate, print, loop).
+
+-> To execute node in Terminal, just write node there and it will start working exactly like the console in our browsers
+-> and to exit and get back to the termonal again type .exit or click ctrl+c twice 
+-> .help for all the commands 
+-> To run a command using node we have to be in correct folder/directory
+
+*********  Process Object  ***********
+-> Process : provides information about,and control over, the current Node.js process 
+-> Process.argv : returns an array containing the two objects by default if we haven't passed any argument yet 
+-> and if we pass any argument it will get stored in the array and if we print it, then it will get printed after that two default values 
+-> Those two default Objects are : 1.Executable path for node 2. current file path which we are running or Executing 
+
+***********  module.exports - files *************
+
+-> module.exports : a special Object 
+-> require() : a built-in function that include external modules that exists in separate files 
+-> writing "module.exports = 555;" to export the value that are stored here(here : 555) and the value can be accessed only by that file which will give the address of this file by writing "require" function (Details in the math.js and script.js)
+-> By default module.exports sends an empty Object
+
+**********  module.exports - directories  **********
+
+-> Same as files just combine all in one and then pass them like arrays 
+-> Package : Code that was written by someone else and now we can use it 
+-> Dependencies : all the softwares that are needed for our project to run properly and without them it will not get executed properly
+-> package.json : it contains descriptive and functional metadata (data about the data) about a project, such as a name, version, and dependencies
+-> we only need package.json in any project to work upon it, not the node modules 
+-> suppose we accidently we delete node modules and we have package.json, then just go to Terminal and write npm install only then it will see dependencies and install automatically 
+
+
+*******  npm - Node package Manager  *******
+
+-> Has two components :1. Library of packages 2.command line tool (through which we can acess the Packages)
+-> node_modules : this folder contains every installed dependencies for your project.
+-> package-lock.json : it records the exact version of every installed dependencies, including its sub-dependencies and their versions 
+-> to add require() in packages we can't have to use ./
+-> If we have to make our own package.json file for our project then we can do it by npm init -> add some info required -> enter-> our package.json is ready 
+-> we can install any package in our this newly created package.json file by just installing it through npm install and we will see that a new dependency of that package will be added to our package.json file 
+-> we can also install globally all these packages and all by adding -g flag 
+
+************  require vs import **************
+
+-> In require(), everything is get imported while in import we do have a choice of what we really want to import 
+-> we have to write export in front of all variables or things that we want to export as a keyword and then in other file where we have to import these write the import keyword and variables that we want to import and then from "./ export file name ", like : import{sum,mul,add etc.} from "./export.js"
+-> and also we have to make a package.json file and add a key value pair of type : module there, then this will work perfectly 
+-> We can't selectively load only the pieces we need with require but with import,  we can selectively load only the pieces we need, which can save memory.
+-> Loading is synchronous for 'require' but can be asynchronous for 'import'.
