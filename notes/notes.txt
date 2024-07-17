@@ -241,4 +241,20 @@ function clickHandler(color){
                 document.body.style.backgroundColor = `${color}` 
             }
 }
--> 
+
+***********   APIs More *************
+
+API -> Application Programming Interface, works as a mediatre in between user and the servers, we give them the request we need and they bring us the necessary information we need 
+-> They are used in the servers and hence also called webAPIs.
+-> APIs fetch the data and return in the form of JSON Format
+-> JSON do not support undefined data type  {More info : www.json.org}
+-> JSON.parse(data) ---> Parses String data to a JS Object
+-> JSON.stringify(json)---> Parse a JS Object data into JSON
+-> Testing APIs request -> 1.Hoppscoth 2.Postman
+-> AJAX --> Asynchronous JS and XML ---> Asynchronous nature of APIs Call. Ex:- Insta like count( Page do not refresh)
+-> For requesting APIs we use fetch method, which return a promise 
+-> Axios ---> Library to make HTTP request
+-> If any of the function is async await then we should once look into it to check that properly 
+-> If we have to assign any image to the html body, use variable.setAttribute("src",variable);
+-> Sending Headers with Axios in the APIs request ---> Passing them as key, value pairs (headers as the keys and data as values)
+-> Updating query Strings ---> We can update it by Passing
