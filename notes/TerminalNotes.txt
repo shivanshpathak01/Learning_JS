@@ -1,0 +1,36 @@
+Command line -> any interface used for entering textual commands 
+Terminal -> type of Command line 
+console -> A Command line interface used to work with your computer 
+Shell -> A Program running on Terminal
+Bash -> A popular shell on macOS/Linux
+Z-Shell -> Another Shell
+
+********  Commands  *****
+1.ls -> list files (show my files)
+2.pwd -> print working directory 
+3.clear -> clear screen 
+
+******  Navigation outside and inside the directories  *******
+1.cd folderName -> to go to that folder 
+2.cd ..-> back button (to go back from this folder)
+3.cd../..-> two step back
+
+/ -> root directory
+mkdir folderName -> to make new directory or folder 
+
+***********  Flags  ************
+-> Flags are the characters that we pass with Commands to modify their behaviour 
+-> writing man in front of any command gives the details of that.
+
+***********  touch Command  ************
+-> to create new files 
+Note : Not working in my PC
+
+*********  Deleting Files and folders  ***********
+
+-> Those files and folders which are deleted through this method can't be retrieved.
+1.rm -> remove files 
+2.rmdir -> remove empty folders 
+3.rm -rf -> remove any folder   (-rf ---> stands for removing forcefully bcz it has some data or folder so we have to remove it forcefully)
+
+
