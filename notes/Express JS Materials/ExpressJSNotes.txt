@@ -17,3 +17,7 @@ We use Express because It:
 
 -> console.dir() => This method prints the whole directory 
 -> Ports : These are the logical endpoints of a network connection that is used to exchange the information  between a web server and a client server 
+
+-> When a server starts, we can stop it by ^C
+-> app.use(req , res) => listens to every incoming request and act according to the callback given  {HAve two parameters} 
+-> We can send the response by res.send() method.
