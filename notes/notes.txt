@@ -259,4 +259,9 @@ API -> Application Programming Interface, works as a mediatre in between user an
 -> Sending Headers with Axios in the APIs request ---> Passing them as key, value pairs (headers as the keys and data as values)
 -> Updating query Strings ---> We can update it by Passing
 -> Path Parameters : It is the variables that a user send while sending a request after '/' {like : https://www.instagram.com/microsoft}  
+
+                    ********      Templating      ***********
+
+-> EJS(Embedded JavaScript Templates) : EJS is a simple Programming language that lets you generate HTML markup with plain JS
+-> It make blueprints of the pages that it has to give to the users 
 -> 
