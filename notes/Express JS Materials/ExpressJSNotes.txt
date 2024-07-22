@@ -1,0 +1,19 @@
+                  Library vs Framework 
+-> Library : A library is a collection of pre-written code that can be used to perform specific tasks.
+-> Full control in our hands in using the Library
+
+-> Framework : A Framework is a set of pre-written code that provides a structure for developing software Applications.
+-> Fully controlled by Frameworks
+
+*********    Express.js    ***********
+-> A Node.js web Application Framework that helps us to make the web applications .
+-> It is used for server side Programming.
+
+We use Express because It: 
+1. listens for incoming Request 
+2. parse the Request 
+3. matches the response with the routes (for ex : google.com/search, Here search is a route , things after the '/' )
+4. Give suitable Response back to the request made.
+
+-> console.dir() => This method prints the whole directory 
+-> Ports : These are the logical endpoints of a network connection that is used to exchange the information  between a web server and a client server 
