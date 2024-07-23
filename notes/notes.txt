@@ -264,4 +264,5 @@ API -> Application Programming Interface, works as a mediatre in between user an
 
 -> EJS(Embedded JavaScript Templates) : EJS is a simple Programming language that lets you generate HTML markup with plain JS
 -> It make blueprints of the pages that it has to give to the users 
--> 
+-> Interpolation Syntax : It refers to embedding expressions into marked up text. {Means by using EJS we can make our HTML dynamic, and we are going to do it now}
+-> We can do the above task by the syntax given on ejs.co {tags section}, It will dynamically modify the HTML and give you the result 
