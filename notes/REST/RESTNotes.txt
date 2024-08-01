@@ -1,0 +1,15 @@
+                               **********  REST  ***********
+
+-> REST (Representational State Transfer) : is an architectural style that defines a set of constraints to be used for creating web services 
+-> RESTful APIs : Those APIs which uses the concepts of REST is known as RESTful APIs.
+-> RESTful APIs helps us in CRUD(Create, Read, Update, Delete) Operations 
+-> Best Practices : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+
+                *********  CRUD Operations  ************ 
+-> GET : retrieves resources
+-> POST : submits new data to the server 
+-> PUT : updates existing data 
+-> PATCH : updates existing data partially 
+-> DELETE : removes data  
+
+-> Resource : On which we are going to perform the Operations
