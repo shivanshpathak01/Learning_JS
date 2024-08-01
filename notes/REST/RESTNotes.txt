@@ -4,6 +4,7 @@
 -> RESTful APIs : Those APIs which uses the concepts of REST is known as RESTful APIs.
 -> RESTful APIs helps us in CRUD(Create, Read, Update, Delete) Operations 
 -> Best Practices : https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+-> Always use nouns instead of verbs in APIs names or URLs 
 
                 *********  CRUD Operations  ************ 
 -> GET : retrieves resources
