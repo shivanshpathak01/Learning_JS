@@ -1,10 +1,10 @@
--> JS Runtime Environment (Not a language, not a library and ether not a framework).
+-> JS Runtime Environment (Not a language, not a library and either not a framework).
 -> Used for server side programming
 
 -> Node REPL(read, evaluate, print, loop).
 
 -> To execute node in Terminal, just write node there and it will start working exactly like the console in our browsers
--> and to exit and get back to the termonal again type .exit or click ctrl+c twice 
+-> and to exit and get back to the terminal again type .exit or click ctrl+c twice 
 -> .help for all the commands 
 -> To run a command using node we have to be in correct folder/directory
 
