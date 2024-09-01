@@ -24,6 +24,8 @@ We use Express because It:
 
 ********************   Routing *********************
 
+=> Best way to create route : First go to the page you want and then it will show cannot get the requested page then make the routes according to the mentioned requirements 
+
 Ex: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
 
 -> app.use() : Keep running everytime (MiddleWares)
@@ -33,6 +35,12 @@ Ex: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_m
 -> / gives the routes forward to forward
 -> '/' only ==> home page 
 -> We can not send too many responses for same path 
+
+
+       ***************   Dynamic Routing ****************
+
+-> Basically such routes in which some routes remains same while some changes (profile/shivansh,profile/shivu,profile/ariana), in all these ex. only the route after the profile is changing all the time.
+-> To make the dynamic routes, just observe which parts in the url are dynamic then put a : in front of route (profile/:shivu)  
 
 
                         *****   Nodemon  *******

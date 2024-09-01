@@ -1,0 +1,3 @@
+-> Basially the dynamic HTML is called ejs.
+-> In ejs Pages, never write public.
+-> 
