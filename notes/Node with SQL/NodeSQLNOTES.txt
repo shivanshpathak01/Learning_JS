@@ -1,0 +1,3 @@
+-> Faker (npm Package) : To generate Fake data each time it executed.
+-> MySQL2 : To connect Node with MySQL.
+-> To end the connection we write connection.end()
