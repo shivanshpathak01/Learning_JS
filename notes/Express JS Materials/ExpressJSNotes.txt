@@ -26,6 +26,9 @@ We use Express because It:
 
 Ex: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
 
+-> app.use() : Keep running everytime (MiddleWares)
+-> app.get() : if you found that route then run it only.
+-> Basically setting the path for handling our requests and getting response of the request made.
 -> It is process of selecting a path for traffic in a network or between or across multiple network
 -> / gives the routes forward to forward
 -> '/' only ==> home page 
@@ -35,4 +38,27 @@ Ex: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_m
                         *****   Nodemon  *******
 
 -> Nodemon is a package used to restart server automatically with code changes  
--> The best way to install the nodemon is to install it globally 
+-> The best way to install the nodemon is to install it globally (npm i nodemon -g)
+-> To run it use : npx nodemon script.js
+
+                        *****   MiddleWares  *******
+
+-> Whenever you request for something and then stop somewhere and perform some other thing or operation in middle, it is termed as MiddleWares
+-> Path : request accepted on Server  ===>  MiddleWares  ===> Route Handler
+Ex : app.use(function(req,res,next){
+    console.log('I am a MiddleWares')
+    next();         // very important to run the next function to forward it to the Route Handler
+});
+
+                        *****   Error Handling  *******
+
+-> Basically we just have to run the next() function in the last MiddleWares or routing function and then write the Error Handling code and just print on console the Error
+Ex : app.get("/profile",function(req,res,next){
+    return next(new Error("Not important"))
+}); 
+ app.use((err,req,next)=>{
+    console.error(err.stack)
+    res.status(500).send('something broke!')
+ })
+
+ app.listen(3000);
