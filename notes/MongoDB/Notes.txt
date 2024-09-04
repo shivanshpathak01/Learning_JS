@@ -1,0 +1,81 @@
+                        ********  Commands  *********
+-> ctrl+l : clear the terminal 
+-> show dbs : will show the list of all databases
+-> mongosh : instantly shifts cmd to mongo shell 
+-> exit/quit : instantly shifts from mongo shell to cmd 
+-> help : lists all the mongoDB commands 
+
+
+                        ********  Important Points  *********
+
+-> MongoDB uses MongoDB Query Language (MQL) as Mysql use SQL as Query Language and it is Case sensitive unlike SQL. 
+-> Mongo shell internally recognises JS commands
+-> In mongoDB, we can create new DBs by just "use DB_name", but it is only created temporarily, it will be permannetly installed once we start to create something in it
+-> BSON Data : Binary JSON, supports more data types than JSON, converts data to binary format and then stores 
+-> Basically Data is stored in the form of BSON format which generally seems like JSON format data 
+-> Documents : Mongo stores data in the form of documents (BSON docs)
+-> Collections : MongoDB stores documents in Collections
+->      SQL        mongoDB
+        rows  <==> documents
+        table <==> Collections
+
+                        ********  CRUD Operations  *********
+1. C : Create (Insert)
+
+-> use DB_name : to create a new database.
+-> show Collections : shows all the Collections
+-> db.collection_name.insertOne(data in key value pairs form(key : value))
+-> db.collection_name.insertMany( [ {key : value},{key:value,key:value},{key:value} ] )
+    insertMany : It is an array of Documents (Inserts many documents into a collection)
+-> db.collection_name.find() : gives you the data of any Collection that are stored in it
+
+2. R : Read (find)
+
+-> db.collection_name.find() : gives you all data of any Collection that are stored in it
+-> db.collection_name.find(key : value ) : gives you all data of any Collection that contains this (key : value) pair  
+    It returns us the cursor( referance to original, pointing towards the original ), and returns the data in the form of an Array 
+-> db.collection_name.findOne(key : value ) : gives you the data of any one Collection that contains this (key : value) pair and could be accessed easily or on first try 
+    It returns us the actual Document.
+
+### Query Operators 
+1.$gt (greater than) : compares the values if greater the certain values given 
+    Syntax : db.collection_name.find({age:{$gt:22}})  (find all whose age > 22) 
+
+2.$in (in) : If any matching values are there in the list which we passed 
+
+3. $or (OR) : means ||  (Joins the queries)
+    Syntax : db.collection_name.find ($or: [ {marks:{$gt:70}}, {city : "Delhi"} ])    (Two condition merged) 
+
+4. $lt (less than) : < value
+
+3. U : Update
+
+-> db.collection_name.updateOne(<filter>,<update>,<options>)
+    filter : conditions on which we perform update (jaha update karna hai, jis basis pe) 
+    update : new thing that gonna replace the old one and update operation then get completed (// kya kaam karna hai)
+    options : less explored 
+
+### Update Operators    
+1. $set : adds new fields to the Documents that contain all existing fields from the input documents and newly added fields 
+    Syntax : {$set :{<newField> : <expression>,...}}
+    Ex : db.collection_name.updateOne({name : "Shivansh"}, {$set : {marks : 100}})
+
+Note : There are many Operators which can be explored on official docs of the mongodb 
+
+-> db.collection_name.updateMany(<filter>,<update>,<options>) : update all documents that matches a specified filter 
+
+-> db.collection_name.replaceOne(<filter>,<update>,<options>) : Replaces at most a single document that matches a specified filter even though multiple Document may match the specified filter
+    Basically replaces the document 
+
+=> Nesting : basically if we have to find any key but it is nested then we will get empty space, so Ex:
+    db.collection_name.insertOne({name : "Danny",performance : {marks: 94,Grade : "A"}})
+    So we have to write : db.collection_name.find(marks:94) => get blank space only
+    So we have to write : db.collection_name.find("performance.marks":94) => get the correct answer
+
+4. D : Delete
+
+-> deleteOne (<filter>,<options>) : The document that matches the condition got Deleted
+-> deleteMany (<filter>,<options>) : Those document that matches the condition they all got Deleted
+-> deleteMany ({}) : No condition is there means delete everything 
+-> db.dropDatabase() : Deletes the Whole database.
+
