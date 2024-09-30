@@ -1,0 +1,6 @@
+-> It is a library that creates connection between MongoDB & NodeJS Javascript Runtime Environment 
+-> It is an ODM (Object Data Modelling) library.
+-> Schema : It defines the shape of the documents within that collection
+-> Making a schema : const User = new mongoose.Schema({})
+-> Models : Model in mongoose is a class with which we construct Documents
+-> Always name your Collections as singular as it will automatically changes to plural in the MongoDB
