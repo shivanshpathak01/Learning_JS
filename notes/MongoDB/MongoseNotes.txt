@@ -3,4 +3,36 @@
 -> Schema : It defines the shape of the documents within that collection
 -> Making a schema : const User = new mongoose.Schema({})
 -> Models : Model in mongoose is a class with which we construct Documents
--> Always name your Collections as singular as it will automatically changes to plural in the MongoDB
+    const Instance_name(Model) = mongoose.model("collection_name",Collection's Schema);
+-> Always name your Collections as singular as it will automatically changes to plural in the MongoDB, Also use the same name of the model as well as of the collection_name.
+-> insertMany : To insert more than one number of the data 
+-> Note : Mongoose uses operation Buffering : lets you start using your models immediately,without waiting for the mongoose to establish connections to MongoDB
+
+-> Find Operation - model.find() : returns a query not a Promise but that query is thenable
+-> Note : Mongose queries are not promises but then method can be applied on them 
+-> FindOne : Will return only one query that is satisfying the given condition 
+-> findById() : One of the most Frequent method that are used, we search by giving the id in the form of the string 
+
+-> UPDATE Operation : Two methods : 1.Model.updateOne()   2.Model.updateMany() 
+-> Both of the methods returns queries not Promises 
+-> Model.findOneAndUpdate() : Basically first Find that document and then update , This method also Returns Query
+-> To return the updated document just pass a option(Called new, which returns the modified document rather than the original one)
+-> Model.findByIdAndUpdate() : Using id
+
+-> DELETE Operation : Basically Deleting the data
+
+        **********Schema Validations*************
+
+-> To make any field necessary to be filled, just write (required:true), you can't miss this value then
+-> we can send numbers in the form of the string also, but when it is going to be saved in DB, it should be parsed into number  
+-> The .save() method is used to insert a new document (or update an existing one) into the MongoDB database. When you create an instance of a Mongoose model, it is only an in-memory JavaScript object. The .save() method takes this object and stores it in the connected MongoDB collection.
+What happens if you don’t use .save():
+Without .save(), the book1 object would exist only in memory. It won't be stored in the database, which means the data would be lost once the program ends, or if you don't manually persist it.
+-> for more accurate and exact constraints See under the section Schema type Options (https://mongoosejs.com/docs/schematypes.html)
+-> enum is the array that contains all the elements that can be used, basically universal set, out of this nothing can be used if enum is defined 
+-> Basically the rules or constraints that we defined earlier get invalid while updation, to keep them valid we use a special method called options.runValidators, set the value of options.runValidators--> true and use them as an other options 
+
+-> Custom errors : If we define some constraints and rules and it get violated then we define some errors, We define them with the constraints itself and put them in an array together 
+-> To reach exactly to the error and the field, console.log(err.errors.category.properties), this will give the error object with all its details
+-> To reach exactly to the error message, console.log(err.errors.category.properties.message) .message contains the Custom error that we have made earlier
+-> 
