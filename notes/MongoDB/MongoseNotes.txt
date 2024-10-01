@@ -2,7 +2,7 @@
 -> It is an ODM (Object Data Modelling) library.
 -> Schema : It defines the shape of the documents within that collection
 -> Making a schema : const User = new mongoose.Schema({})
--> Models : Model in mongoose is a class with which we construct Documents
+-> Models : Model in mongoose is a class with which we construct Documents (Basically it becomes our Collections)
     const Instance_name(Model) = mongoose.model("collection_name",Collection's Schema);
 -> Always name your Collections as singular as it will automatically changes to plural in the MongoDB, Also use the same name of the model as well as of the collection_name.
 -> insertMany : To insert more than one number of the data 

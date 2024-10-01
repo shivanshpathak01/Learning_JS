@@ -76,6 +76,6 @@ Note : There are many Operators which can be explored on official docs of the mo
 
 -> deleteOne (<filter>,<options>) : The document that matches the condition got Deleted
 -> deleteMany (<filter>,<options>) : Those document that matches the condition they all got Deleted
--> deleteMany ({}) : No condition is there means delete everything 
+-> deleteMany ({}) : No condition is there means delete everything (db.collection_name.deleteMany({}))
 -> db.dropDatabase() : Deletes the Whole database.
 
