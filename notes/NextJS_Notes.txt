@@ -1,0 +1,15 @@
+-> main diffrence that typescript creates here is that we have to specify type here also
+-> Always try to name the folder in the small case.
+-> always name the files as page.tsx and layout.tsx 
+-> the folder name is automatically set as routes 
+-> if you make two, three ... no. of the pages and layouts, all will be rendered on the page
+-> Layouts ki cheeze har page pe rahti hain 
+-> "use client"  -->  We have to write this whenever there is a ui manipulation or we want to use react hooks.
+-> whenever we use <a></a>, page reloads so we use link to avoid that.
+-> why we use link in nextjs ?
+-> In Next.js, the <Link> component is used for client-side navigation between different pages of your application. It provides several benefits over traditional <a> tags, such as:
+    client side rendering
+    SEO friendly etc.
+-> Adding Dark mode to the tailwind.config.ts by : darkMode:'class', just before theme  
+-> course : Course  ==> here Course is the datatype that is defined here
+-> Always use 'use client' whenever you are rendering a client side website
